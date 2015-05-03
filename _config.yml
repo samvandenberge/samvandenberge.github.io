@@ -6,13 +6,13 @@ author:
 
 # Site settings
 title: Sam Van Den Berge
-url: http://samvandenberge.be
+# url: http://samvandenberge.be
 
 # site version
 version: 1.0.0
 
 # your github username
-github_username: samvandenberge
+github_username: sam45
 
 # set true to include or false to exclude share option
 share:

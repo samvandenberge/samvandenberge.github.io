@@ -2,12 +2,12 @@
   "name": "SamVanDenBerge",
   "description": "Source code for Sam Van Den Berge website",
   "author": "SamVanDenBerge",
+  "url": "samvandenberge.be",
   "version": "0.1.0",
   "copyright": "2015",
-  "url": "http://samvandenberge.be.net",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sam45"
+    "url": "https://github.com/samvandenberge"
   },
   "private": true,
   "devDependencies": {

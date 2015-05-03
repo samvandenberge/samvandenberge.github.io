@@ -1,0 +1,21 @@
+{
+  "name": "samvandenberge",
+  "version": "0.1.0",
+  "homepage": "https://github.com/samvandenberge/samvandenberge.github.io",
+  "authors": [
+    "Sam Van Den Berge <vandenbergesam@gmail.com>"
+  ],
+  "description": "Source code for Sam Van Den Berge website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.2.0"
+  }
+}

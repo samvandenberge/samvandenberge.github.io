@@ -1,8 +1,8 @@
 {
-  "name": "SamVanDenBerge",
+  "name": "personal-website",
   "description": "Source code for Sam Van Den Berge website",
-  "author": "SamVanDenBerge",
-  "url": "samvandenberge.be",
+  "author": "Sam Van Den Berge",
+  "url": "www.samvandenberge.be",
   "version": "0.1.0",
   "copyright": "2015",
   "repository": {

@@ -128,7 +128,6 @@ module.exports = function( grunt ) {
   grunt.registerTask( 'dist', [ 'uncss', 'less:dist', 'uglify' ] );
   grunt.registerTask( 'default', [ 'build', 'dist'] );
   //grunt.registerTask( 'default', [ 'build'] );
-
   grunt.registerTask( 'concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function() {
 
     // concat task provides a process function to load dynamic scripts parameters

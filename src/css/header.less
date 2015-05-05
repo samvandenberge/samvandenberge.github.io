@@ -31,7 +31,6 @@
       font-size: 14px;
 
       a {
-
         color: @white;
         text-decoration: none;
       }
@@ -75,8 +74,12 @@
             text-decoration: none ;
             width: 100%;
             font-size: ( 16px / @font-size-base ) * 1em;
-          }
 
+            &.active {
+              font-weight: bolder !important;
+            }
+          }
+          
           &:hover {
             background-color: @primary-700;
           }

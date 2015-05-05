@@ -126,8 +126,8 @@ module.exports = function( grunt ) {
   grunt.registerTask( 'watch', [ 'build', 'delta' ] );
   grunt.registerTask( 'build', [ 'clean', 'jshint', 'copy', 'concatScripts', 'less:build' ] );
   grunt.registerTask( 'dist', [ 'uncss', 'less:dist', 'uglify' ] );
-  // grunt.registerTask( 'default', [ 'build', 'dist'] );
-  grunt.registerTask( 'default', [ 'build'] );
+  grunt.registerTask( 'default', [ 'build', 'dist'] );
+  //grunt.registerTask( 'default', [ 'build'] );
 
   grunt.registerTask( 'concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function() {
 

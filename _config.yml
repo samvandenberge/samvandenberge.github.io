@@ -19,7 +19,7 @@ github_username: samvandenberge
 share:
   twitter: false
   facebook: false
-  google_plus: false
+  google_plus: true
   linkedin: true
   disqus: false
 

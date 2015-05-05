@@ -6,7 +6,8 @@ author:
 
 # Site settings
 title: Sam Van Den Berge
-# url: http://samvandenberge.be
+url: http://samvandenberge.be
+paginate: 5
 
 # site version
 version: 1.0.0
@@ -26,3 +27,7 @@ share:
 markdown: kramdown
 highlighter: pygments
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
+
+# Plugins
+gems:
+  - jekyll-sitemap

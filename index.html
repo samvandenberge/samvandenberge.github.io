@@ -2,11 +2,8 @@
 layout: default
 ---
 <section id="posts">
-
   {% for post in paginator.posts %}
-
   <article class="post">
-
         <h1 class="post-title">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h1>
@@ -77,3 +74,28 @@ layout: default
   <!-- pagination -->
 
 </section>
+<aside class="visible-lg-block">
+      <section>
+
+        <h3>Recent Posts</h3>
+
+        <ul>
+        {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+
+      </section>
+      <!-- recent posts -->
+
+      {% if site.share.disqus %}
+      <section id="recent-comments-section">
+
+        <h3>Recent Comments</h3>
+
+      </section>
+      <!-- recent comments -->
+      {% endif %}
+</aside>

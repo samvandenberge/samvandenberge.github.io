@@ -126,7 +126,7 @@ module.exports = function (grunt) {
                 'scripts/site.js',
                 'index.html'
             ],
-            tasks: ['build'],
+            tasks: ['build', 'shell:jekyllBuild'],
             options: {
                 interrupt: true,
                 atBegin: true
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
             },
             less: {
                 files: ['<%= project.src.css %>/**/*.less'],
-                tasks: ['less:build', 'shell:jekyllBuild']
+                tasks: ['less:build']
             }
         }
     };

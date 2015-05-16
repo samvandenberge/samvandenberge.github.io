@@ -187,13 +187,23 @@ module.exports = function (grunt) {
             scriptSrc.push('<%= project.src.js %>/disqus.js');
         }
 
+        // include JQuery
+        scriptSrc.push('bower_components/jquery/dist/jquery.js');
+
+        // include material.js
+        scriptSrc.push('bower_components/bootstrap-material-design/dist/js/material.js');
+        scriptSrc.push('bower_components/bootstrap-material-design/dist/js/ripples.js');
+
+        // include scripts.js
+        scriptSrc.push('<%= project.src.js %>/scripts.js');
+
         scriptSrc.push('<%= project.src.js %>/module.suffix');
 
         // explicitly put the linkedIn code out of the immediate function to work
         if (jekyllConfig.share.linkedin) {
             scriptSrc.push('<%= project.src.js %>/linkedin.js');
         }
-
+        
         // set source
         concat.js.src = scriptSrc;
 

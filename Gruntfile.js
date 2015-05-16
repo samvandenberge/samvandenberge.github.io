@@ -122,9 +122,8 @@ module.exports = function (grunt) {
                 '_layouts/*.html',
                 '_posts/*.md',
                 '_config.yml',
-                'css/main.css',
-                'scripts/site.js',
-                'index.html'
+                'index.html',
+                'src/css/*.less'
             ],
             tasks: ['build', 'shell:jekyllBuild'],
             options: {

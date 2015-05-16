@@ -12,4 +12,4 @@ jekyll serve  // run the site
 ## Workflow
 
 - Build & watch using the grunt default task
-- Create a website in IIS and point it to __site_ to host on your local machine
+- Create a website in IIS and point it to _site to host on your local machine

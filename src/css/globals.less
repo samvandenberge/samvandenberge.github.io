@@ -1,68 +1,67 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import "variables";
 
 body {
-  background-color: @white;
+    background-color: @white;
 }
 
 // Text selection background color
 
 ::selection {
-
-  background: @accent-200;
-  color: @white;
+    background: @accentColor;
+    color: @white;
 }
-::-moz-selection {
 
-  background: @accent-200;
-  color: @white;
+::-moz-selection {
+    background: @accentColor;
+    color: @white;
 }
 
 // Paragraph
 
 p {
-  line-height: 1.5em;
-  margin-bottom: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
 }
 
 // Code block
 
 pre {
+    font-size: @font-size-base;
 
-  font-size: @font-size-base;
-
-  code {
-    font-family: monospace;
-    font-size: ( 16px / @font-size-base ) * 1em;
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
-    border: none;
-  }
+    code {
+        font-family: monospace;
+        font-size: ( 16px / @font-size-base ) * 1em;
+        overflow: auto;
+        -ms-word-wrap: normal;
+        word-wrap: normal;
+        white-space: pre;
+        border: none;
+    }
 }
 
 code {
-  font-family: monospace;
-  font-size: ( 14px / @font-size-base ) * 1em;
-  background-color: @light-dividers;
-  padding: 0px 5px 2px;
-  border: 1px solid @dividers;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: @secondary-text;
-  background-color: @white;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    font-family: monospace;
+    font-size: ( 14px / @font-size-base ) * 1em;
+    background-color: @light-dividers;
+    padding: 0px 5px 2px;
+    border: 1px solid @dividerColor;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: @secondaryTextColor;
+    white-space: pre-wrap;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 // Headings
 
 h1, h2, h3 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 h1 {
@@ -80,10 +79,9 @@ h3 {
 // Link
 
 a {
+    color: @accentColor;
 
-  color: @accent-400;
-
-  &:hover, &:focus {
-    color: @accent-400;
-  }
+    &:hover, &:focus {
+        color: @accentColor;
+    }
 }

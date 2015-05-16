@@ -1,17 +1,17 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import "variables";
 
 /* Extra small devices (phones) */
 
-#posts {
+/*#posts {
     article.post {
-        border-bottom: 1px solid @dividers;
+        border-bottom: 1px solid @dividerColor;
 
         &:last-of-type {
             border-bottom: none;
         }    
     }
-}
+}*/
 
 .post {
 
@@ -24,7 +24,7 @@
 
     a {
 
-      color: @text-color;
+      color: @primaryTextColor;
       text-decoration: none;
     }
   }
@@ -33,15 +33,15 @@
 
     font-size: ( 16px / @font-size-base ) * 1em;
     margin-bottom: 15px;
-    color: @secondary-text;
+    color: @secondaryTextColor;
 
     a {
-      color: @secondary-text;
+      color: @secondaryTextColor;
     }
   }
 
   .post-content {
-    color: @text-color;
+    color: @primaryTextColor;
   }
 
   .post-reading-link {

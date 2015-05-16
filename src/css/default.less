@@ -1,78 +1,83 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import "variables";
 @import "../../bower_components/bootstrap/less/variables";
 
 aside {
 
-  section {
+    section {
 
-    ul {
+        ul {
+            padding-left: 18px;
+            margin-bottom: 0;
 
-      padding-left: 18px;
-      margin-bottom: 0;
+            li {
+                margin-bottom: 5px;
 
-      li {
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
-        margin-bottom: 5px;
+                span.disqus-author {
+                    color: @secondaryTextColor;
+                    font-size: ( 16px / @font-size-base ) * 1em;
+                }
 
-        &:last-child {
-          margin-bottom: 0;
+                a {
+                    font-size: ( 16px / @font-size-base ) * 1em;
+                }
+            }
         }
-
-        span.disqus-author {
-
-          color: @secondary-text;
-          font-size: ( 16px / @font-size-base ) * 1em;
-        }
-
-        a {
-          font-size: ( 16px / @font-size-base ) * 1em;
-        }
-      }
     }
-  }
 
-  #recent-comments-section {
-    display: none;
-  }
+    #recent-comments-section {
+        display: none;
+    }
 }
 
 #page-content {
     #content {
-      margin: 0 auto;
-      max-width: 610px;
-      padding: 0 15px;
+        margin: 0 auto;
+        max-width: 610px;
+        padding: 0 15px;
     }
 }
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: @screen-xs-max) {
-  body {
-   font-size: 16px;
-  }
+    body {
+        font-size: 16px;
+    }
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media ( min-width: @screen-md-min ) {
 
-  #page-wrap {
-    padding-left: @header-size;
-    width: 100%;
-  }
+    #page-wrap {
+        padding-left: @header-size;
+        width: 100%;
+    }
 
-  #page-content {
-      margin: 0 auto;
-      max-width: 940px;
+    #page-content {
+        margin: 0 auto;
+        max-width: 940px;
 
-      #content {
-        float: left;
-      }
+        #content {
+            float: left;
+        }
 
-      aside {
-        float: left;
-        max-width: 300px;
-        padding-left: 25px;
-      }
-  }
+        aside {
+            float: left;
+            max-width: 300px;
+            padding-left: 25px;
+        }
+    }
+}
+
+/* Pagination */
+.pagination {
+
+    .btn-primary {
+        color: @white !important;
+    }
 }

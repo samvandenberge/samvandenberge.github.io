@@ -52,6 +52,12 @@ module.exports = function (grunt) {
                 dest: 'assets',
                 expand: true,
                 cwd: 'src'
+            },
+            src: {
+                src: 'favicon.ico',
+                dest: './',
+                expand: true,
+                cwd: 'src'
             }
         },
 
@@ -122,9 +128,8 @@ module.exports = function (grunt) {
                 '_layouts/*.html',
                 '_posts/*.md',
                 '_config.yml',
-                'css/main.css',
-                'scripts/site.js',
-                'index.html'
+                'index.html',
+                'src/css/*.less'
             ],
             tasks: ['build', 'shell:jekyllBuild'],
             options: {
@@ -188,13 +193,23 @@ module.exports = function (grunt) {
             scriptSrc.push('<%= project.src.js %>/disqus.js');
         }
 
+        // include JQuery
+        scriptSrc.push('bower_components/jquery/dist/jquery.js');
+
+        // include material.js
+        scriptSrc.push('bower_components/bootstrap-material-design/dist/js/material.js');
+        scriptSrc.push('bower_components/bootstrap-material-design/dist/js/ripples.js');
+
+        // include scripts.js
+        scriptSrc.push('<%= project.src.js %>/scripts.js');
+
         scriptSrc.push('<%= project.src.js %>/module.suffix');
 
         // explicitly put the linkedIn code out of the immediate function to work
         if (jekyllConfig.share.linkedin) {
             scriptSrc.push('<%= project.src.js %>/linkedin.js');
         }
-
+        
         // set source
         concat.js.src = scriptSrc;
 

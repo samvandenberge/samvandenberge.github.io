@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import "variables";
+@import "../../bower_components/bootstrap/less/variables";
+
 /* Extra small devices (phones) */
 
 #site-header {
@@ -11,7 +15,7 @@
 
     min-height: 215px;
     padding: 22px;
-    background-color: @primary-700;
+    background-color: @darkPrimaryColor;
 
     #author-picture {
 
@@ -50,8 +54,8 @@
     top: 0px;
     width: @header-size;
     color: @white;
-    background-color: @primary-500;
-    border-right: 1px solid @primary-700;
+    background-color: @primaryColor;
+    border-right: 1px solid @darkPrimaryColor;
 
     #author-intro {
       font-size: ( 13px / @font-size-base ) * 1em;
@@ -81,7 +85,7 @@
           }
 
           &:hover {
-            background-color: @primary-700;
+            background-color: @darkPrimaryColor;
           }
         }
       }
@@ -101,7 +105,7 @@
       }
 
       .fa-heart {
-        color: @accent-200;
+        color: @accentColor;
       }
 
       ul {

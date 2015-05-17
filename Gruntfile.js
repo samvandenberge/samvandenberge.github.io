@@ -52,6 +52,12 @@ module.exports = function (grunt) {
                 dest: 'assets',
                 expand: true,
                 cwd: 'src'
+            },
+            src: {
+                src: 'favicon.ico',
+                dest: './',
+                expand: true,
+                cwd: 'src'
             }
         },
 

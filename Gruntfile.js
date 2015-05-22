@@ -153,7 +153,7 @@ module.exports = function (grunt) {
     grunt.initConfig(config);
 
     grunt.registerTask('build', ['clean', 'jshint', 'copy', 'concatScripts', 'less:build']);
-    grunt.registerTask('dist', ['build', 'uncss', 'less:dist', 'uglify', 'shell:jekyllBuild']);
+    grunt.registerTask('dist', ['build', 'less:dist', 'uglify', 'shell:jekyllBuild']);
     grunt.registerTask('default', ['watch']);
 
     grunt.registerTask('concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function () {

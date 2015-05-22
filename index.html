@@ -22,9 +22,12 @@ layout: default
                     {% endif %}
                 </li>
 
+                {% if jekyll.environment == 'development' %}
                 <li>
                     <a href="//github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/blob/master/{{ post.path }}" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
                 </li>
+                {% endif %}
+
             </ul>
         </div>
         <!-- meta -->

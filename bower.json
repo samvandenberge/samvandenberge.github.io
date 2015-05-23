@@ -20,6 +20,8 @@
     "font-awesome": "~4.2.0"
   },
   "dependencies": {
-    "bootstrap-material-design": "~0.3.0"
+    "bootstrap-material-design": "~0.3.0",
+    "jquery-validation": "~1.13.1",
+    "jquery": "~2.1.4"
   }
 }

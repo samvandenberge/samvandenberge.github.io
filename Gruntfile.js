@@ -1,3 +1,5 @@
+/// <reference path="bower_components/jquery-validation/dist/jquery.validate.js" />
+/// <reference path="bower_components/jquery-validation/dist/jquery.validate.js" />
 module.exports = function (grunt) {
     'use strict';
 
@@ -128,8 +130,11 @@ module.exports = function (grunt) {
                 '_layouts/*.html',
                 '_posts/*.md',
                 '_config.yml',
+                'src/js/*.js',
                 'index.html',
-                'src/css/*.less'
+                'src/css/*.less',
+                'about/*.html',
+                'projects/*.html'
             ],
             tasks: ['build', 'shell:jekyllBuild'],
             options: {
@@ -195,6 +200,7 @@ module.exports = function (grunt) {
 
         // include JQuery
         scriptSrc.push('bower_components/jquery/dist/jquery.js');
+        scriptSrc.push('bower_components/jquery-validation/dist/jquery.validate.js');
 
         // include material.js
         scriptSrc.push('bower_components/bootstrap-material-design/dist/js/material.js');

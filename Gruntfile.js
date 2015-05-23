@@ -1,5 +1,3 @@
-/// <reference path="bower_components/jquery-validation/dist/jquery.validate.js" />
-/// <reference path="bower_components/jquery-validation/dist/jquery.validate.js" />
 module.exports = function (grunt) {
     'use strict';
 

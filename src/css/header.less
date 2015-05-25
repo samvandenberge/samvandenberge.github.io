@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import "variables";
 @import "../../bower_components/bootstrap/less/variables";
 
@@ -42,16 +42,14 @@
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
-
 @media ( min-width: @screen-md-min ) {
 
   #site-header {
 
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: @header-size;
     color: @white;
     background-color: @primaryColor;
@@ -115,4 +113,12 @@
       }
     }
   }
+}
+
+// sidebar - only show github logo when there is space for it
+@media ( max-height: 500px ) {
+    footer.visible-lg-block {
+        display: 
+            none !important
+    }
 }

@@ -6,7 +6,7 @@ author:
 
 # Site settings
 title: Sam Van Den Berge
-url: http://samvandenberge.be
+url: https://samvandenberge.be
 paginate: 4
 
 # site version
@@ -29,5 +29,4 @@ highlighter: pygments
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js', 'tools']
 
 # Plugins
-# gems:
-#  - jekyll-sitemap
+gems: [jekyll-paginate, pygments.rb]

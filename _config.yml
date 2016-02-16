@@ -29,4 +29,4 @@ highlighter: pygments
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js', 'tools']
 
 # Plugins
-gems: [jekyll-paginate, pygments.rb]
+gems: [jekyll-paginate, rouge]
